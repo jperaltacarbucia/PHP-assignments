@@ -31,3 +31,32 @@ When you're done editing this file, save it, commit it, and push it to your "ass
 
 ## Now get to it!
 
+
+//Copied Code--->
+
+<?
+
+    //make sure we have a version of the latest zip file on disk
+    $basefilename = "jsGameSoup-v$revno.zip";
+    $filename = "cache/" . $basefilename;
+    if (!file_exists($filename)) {
+        if (!is_dir("cache")) {
+            mkdir("cache");
+        }
+        $ziplog = `zip = -r '$filename' . --exclude .git`;
+    }
+?>
+
+// End.
+
+
+
+// The dashed lines "//"  means comments for the programmer to see.
+
+// "$basefilename" is a variable; we can tell by the dollar sign
+
+// "mkdir("cache")" is a function; we can tell by the name and then the "()"
+
+// "if (!file_exists($filename))" is a function with an if statement
+
+// "cache/" . $basefilename;" is a literal; we can tell by what is inside the variable
