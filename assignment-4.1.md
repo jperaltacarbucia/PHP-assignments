@@ -1,6 +1,7 @@
 function home()
 {
     return isset($_SESSION['user_logged_in']) ? '
+<<<<<<< HEAD
     <p>
       Hello, ' . $_SESSION['user_name'] . '. You are now logged in. Try to close
       this browser tab and open it again. Still logged in! ;)
@@ -8,6 +9,15 @@ function home()
     <p>
       <a class="btn" href="?a=logout">Logout</a>
     </p>' : login_form();
+=======
+<p>
+Hello, ' . $_SESSION['user_name'] . '. You are now logged in. Try to close
+this browser tab and open it again. Still logged in! ;)
+</p>
+<p>
+<a class="btn" href="?a=logout">Logout</a>
+</p>' : login_form();
+>>>>>>> 582a9cc985a420c963d63e935e2aeb32ca2ab051
 }
 
 function logout()
@@ -69,6 +79,7 @@ function register()
     return register_form();
 }
 
+<<<<<<< HEAD
 
 //REVIEW BY CLASSMATE
 //The way He/She structured the code is good. He/She used appropiate names for the function,
@@ -77,3 +88,5 @@ function register()
 //It looks like it's letting the user register for an account.
 
 //Joshua Peralta
+=======
+>>>>>>> 582a9cc985a420c963d63e935e2aeb32ca2ab051
